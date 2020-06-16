@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  //  padding: 0 10px;
+  // width: 100%;
+  border: orange solid 1px;
+  &--pets {
+    display: flex;
+    flex-direction: column;
+    &--container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    &--dog {
+      background-color: peachpuff;
+      width: 45%;
+    }
+    &--cat {
+      background-color: pink;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    &--pets {
+      display: flex;
+    }
+  }
+}
