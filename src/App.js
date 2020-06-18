@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/home";
 import Chat from "./pages/chat";
-import store from "./store";
+import store from "./store/index.js";
 import { Provider as StoreProvider } from "react-redux";
 import "./App.css";
 import {

@@ -1,19 +1,35 @@
+import { combineReducers } from "redux";
+
 const initialState = {
-  counter: 0,
   pet: "",
 };
 
-function reducer(state = initialState, action) {
-  console.log(state, action);
+const pet = (state = initialState, action) => {
   switch (action.type) {
     case "CHOOSE_PET":
-      return {
-        ...state,
-        pet: action.payload.pet,
-      };
+      return action.payload;
+
     default:
-      return { ...state };
+      return state;
   }
-}
+};
+
+export const reducer = combineReducers({
+  pet,
+});
 
 export default reducer;
+
+// const reducer = (state = initialState, action) => {
+//   switch (action.type) {
+//     case "CHOOSE_PET":
+//       return {
+//         ...state,
+//         pet: action.payload,
+//       };
+//     default:
+//       return { ...state };
+//   }
+// };
+
+// export default reducer;
