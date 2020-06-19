@@ -5,11 +5,11 @@ import catAnimation from "../../data/cat.json";
 import { useSelector } from "react-redux";
 
 const Pet = ({ classes, history, animation, handleOnClick }) => {
-  const store = useSelector((state) => state);
+  const pet = useSelector((state) => state.pet);
 
   const animationData = () => {
     if (animation) return animation;
-    else if (store.pet === "dog") {
+    else if (pet === "dog") {
       return dogAnimation;
     } else return catAnimation;
   };
