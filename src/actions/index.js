@@ -1,10 +1,10 @@
 const types = {
-  CHOOSE_PET: "CHOOSE_PET",
+  SET_PET: "SET_PET",
 };
 
-export const choosePet = (pet) => {
+export const setPet = (pet) => {
   return {
-    type: types.CHOOSE_PET,
+    type: types.SET_PET,
     payload: pet,
   };
 };

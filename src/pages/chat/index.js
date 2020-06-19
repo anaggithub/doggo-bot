@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import Pet from "../../components/pet/container";
+import Pet from "../../components/pet";
 
 const Chat = () => {
   return (

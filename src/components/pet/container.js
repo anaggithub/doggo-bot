@@ -1,20 +1,19 @@
-import { choosePet } from "../../actions";
-import { connect } from "react-redux";
-import Pet from "../../components/pet";
-//import Home from "../../pages/home";
+// import { setPet } from "../../actions";
+// import { connect } from "react-redux";
+// import Pet from "../../components/pet";
 
-const mapStateToProps = (state) => {
-  return { ...state, pet: state.pet };
-};
+// const mapStateToProps = (state) => {
+//   return { ...state, pet: state.pet };
+// };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    choosePet: (pet) => dispatch(choosePet(pet)),
-  };
-};
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     setPet: (pet) => dispatch(setPet(pet)),
+//   };
+// };
 
-const createConnection = connect(mapStateToProps, mapDispatchToProps);
+// const createConnection = connect(mapStateToProps, mapDispatchToProps);
 
-const PetContainer = createConnection(Pet);
+// const PetContainer = createConnection(Pet);
 
-export default PetContainer;
+// export default PetContainer;

@@ -1,17 +1,16 @@
 import React from "react";
 import "./index.scss";
-import Pet from "../../components/pet/container";
+import Pet from "../../components/pet";
 import dogAnimation from "../../data/dog.json";
 import catAnimation from "../../data/cat.json";
 import { useDispatch } from "react-redux";
-import { choosePet } from "../../actions/";
+import { setPet } from "../../actions/";
 
-const Home = (props) => {
-  const { history } = props;
+const Home = ({ history }) => {
   const dispatch = useDispatch();
 
   function handleOnClick(pet) {
-    dispatch(choosePet(pet));
+    dispatch(setPet(pet));
     history.push("/chat");
   }
 

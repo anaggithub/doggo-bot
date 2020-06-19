@@ -6,7 +6,7 @@ const initialState = {
 
 const pet = (state = initialState, action) => {
   switch (action.type) {
-    case "CHOOSE_PET":
+    case "SET_PET":
       return action.payload;
 
     default:
@@ -19,17 +19,3 @@ export const reducer = combineReducers({
 });
 
 export default reducer;
-
-// const reducer = (state = initialState, action) => {
-//   switch (action.type) {
-//     case "CHOOSE_PET":
-//       return {
-//         ...state,
-//         pet: action.payload,
-//       };
-//     default:
-//       return { ...state };
-//   }
-// };
-
-// export default reducer;
