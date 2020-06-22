@@ -1,6 +1,6 @@
 .home {
   color: #4b4f53;
-  height: 100vw;
+  min-height: 100vh;
   &--header {
     padding: 40px 10px;
     h1 {
@@ -13,22 +13,22 @@
     flex-direction: column;
   }
   &--pets {
-    height: 350px;
+    height: 200px;
     width: 100%;
   }
   .dog {
-    background-color: peachpuff;
+    // background-color: peachpuff;
   }
+
   .cat {
-    background-color: pink;
+    //  background-color: pink;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .home {
-    background-color: pink;
     &--pets-container {
-      width: 100%;
+      //width: 100%;
       flex-direction: row;
       max-width: 768px;
       margin: 0 auto;
@@ -36,9 +36,6 @@
     &--pets {
       max-height: 300px;
       width: 100%;
-    }
-    .dog {
-      background-color: pink;
     }
   }
 }
