@@ -1,0 +1,19 @@
+.user-item {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  align-items: center;
+
+  &--user {
+    width: 80px;
+    background-color: yellow;
+  }
+  &--messages {
+    background-color: rgb(58, 14, 99);
+    padding: 10px;
+    border-radius: 5px;
+    color: whitesmoke;
+    width: fit-content;
+    margin-right: 10px;
+  }
+}
