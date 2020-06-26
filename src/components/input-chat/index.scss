@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--input {
+    width: 82%;
+    border: 1px solid grey;
+    background-color: gainsboro;
+    height: 35px;
+    font-family: "Quicksand";
+    padding-left: 15px;
+    border-radius: 25px;
+    //no conocia el outline!
+    outline: none;
+  }
+
+  //esto tampoco!!
+  &--input::placeholder {
+    color: rgb(129, 17, 54);
+  }
+  &--button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background-color: rgb(58, 14, 99);
+    font-size: 25px;
+    color: whitesmoke;
+    // background-image: url("../../assets/images/shuttle.png");
+    // background-size: 16px;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // box-shadow: 2px 2px 15px 0 grey;
+  }
+}
