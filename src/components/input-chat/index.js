@@ -10,7 +10,7 @@ const InputChat = () => {
         placeholder="Escribe tu nombre"
       />
       <button className="form--button" type="submit">
-        <i class="fas fa-chevron-right"></i>
+        <i className="fas fa-chevron-right"></i>
       </button>
     </form>
   );
