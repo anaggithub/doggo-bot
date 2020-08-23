@@ -3,4 +3,4 @@
 Este es un proyecto de práctica de React creado para el Workshop de React de ReactCba. 
 Link a su Twitter: https://twitter.com/reactcba <br />
 
-Implementando React, Hooks y una primera store pequeñita con Redux! <br />
+Implementando React, Hooks y una primera store pequeñita con Redux! Pero quedó a mitad de camino n.n <br />
